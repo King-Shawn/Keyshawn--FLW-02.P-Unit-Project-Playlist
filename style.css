@@ -76,7 +76,10 @@ button {
 }
 
 body {
-  background: url(https://i.pinimg.com/originals/b8/4f/41/b84f4195a6d33c93d01111287c0c7b7e.jpg);
+  background: url("https://img.freepik.com/premium-vector/space-background-with-abstract-shape-stars_189033-30.jpg");
+  background-repeat: repeat;
+  background-size: 100% 100%;  
+  background-position: center;
 color: white;
 }
 
