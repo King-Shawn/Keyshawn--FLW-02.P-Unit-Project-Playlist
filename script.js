@@ -42,18 +42,6 @@ let displayLink = document.querySelector(".display-link");
 // task 12: create an object for each of your songs.
 // task 13: inside each object, add key/value pairs to store the image url, song name, artist, and song link.
 // task 14: create an array that stores all of the objects.
-// let addedSongs = {
-//   imageLink: ["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4KzE3pt5ti2ZVKRc7G-FgRr5pIsufTBhLZQ&usqp=CAU", "https://i.scdn.co/image/ab67616d0000b27308e30ab6a058429303d75876", "https://upload.wikimedia.org/wikipedia/en/2/2f/KSI_-_Holiday.png", "https://i.scdn.co/image/ab67616d0000b2732bf0876d42b90a8852ad6244", "https://upload.wikimedia.org/wikipedia/en/3/36/%22Chicago%22_promotional_cover.jpg"],
-//   song: ["Heart Mind", "Golden Hour", "Intentions", "Holiday", "Until I found you (Em Beihold Version)", "Chicago"],
-//   artists: ["Kodak Black & Plies", "Jvke", "Justin Bieber & Quavo", "KSI", "Stephen Sanchez & Em Beihold", "Michael Jackson"],
-//   vidLink: ["https://www.youtube.com/watch?v=VZJoUC1F5xI",
-//  "https://www.youtube.com/watch?v=UsR08cY8k0A",
-//  "https://www.youtube.com/watch?v=3AyMjyHu1bA",
-//  "https://www.youtube.com/watch?v=gfHbg53ykPY",
-//  "https://www.youtube.com/watch?v=kPlSyYtE63M",
-//  "https://www.youtube.com/watch?v=Y_8mUx4VOmo"]
-// };
-
 let songList = [{
   imageLink: "https://i1.sndcdn.com/artworks-oDdflDikYpVv-0-t500x500.png", 
   song: "Heart Mind",
@@ -89,8 +77,6 @@ let songList = [{
 // task 16: update your `.push()` so the input object is added to your array of objects.
 // task 17: update your loops based on your new array of objects.
 
-
-
 function addSongInfo() {
 
 // task 9: declare a variable to save the user input of the image url. Declare three more variables that save user input: One for the song names, one for the artists, and a last one for the song links.
@@ -124,19 +110,6 @@ function displaySongInfo() {
     displayArtist.insertAdjacentHTML("Beforeend", `<p>${song.artists}</p>`)
     displayLink.insertAdjacentHTML("Beforeend", `<p> <a href =${song.vidLink} target="_blank"> This songs link<a/></p>`)
 });
-
-//   song.forEach(function(songs) {
-//   displaySong.insertAdjacentHTML("Beforeend", `<p>${songs}</p>`)
-// });
-
-//   artists.forEach(function(artist) {
-//   displayArtist.insertAdjacentHTML("Beforeend", `<p>${artist}</p>`)
-// });
-
-//   vidLink.forEach(function(links) {
-//   displayLink.insertAdjacentHTML("Beforeend", `<p> <a href =${links} target="_blank"> This songs link<a/></p>`)
-// });
-  
 }
 
 // click event to add and display songs
